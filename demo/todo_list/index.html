@@ -17,22 +17,7 @@
     <div class="page-body" id="todo-list"></div>
   </div>
   
-  <script>
-  var TodoList = function() {};
-
-  $.extend(TodoList.prototype, CapeJS.Component.prototype, {
-    render: function() {
-      var self = this,
-          b = new CapeJS.VdomBuilder(this);
-      return b.markup(function(b) {
-        b.p('Hello World!');
-      })
-    }
-  })
-  
-  var todo = new TodoList();
-  todo.mount('todo-list');    
-  </script>
+  <script src="./todo_list.js"></script>
 </body>
 </html>
 
