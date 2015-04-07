@@ -5,9 +5,8 @@
 
   $.extend(TodoList.prototype, CapeJS.Component.prototype, {
     render: function() {
-      var self = this,
-          b = new CapeJS.VdomBuilder(this);
-      return b.markup(function(b) {
+      var self = this;
+      return this.markup(function(b) {
         b.p('Hello World!');
       })
     }
